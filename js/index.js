@@ -6,7 +6,7 @@ for (let i = 0; i <= 10; i++) {
     const row = document.createElement('tr');
 
     for (let j = 0; j <= 10; j++) {
-        let cellTag = (i === 0 || j === 0) ? 'th' : 'td'; // якщо рядок/стовпчик перший то -> th, всі інші -> td
+        const cellTag = (i === 0 || j === 0) ? 'th' : 'td'; // якщо рядок/стовпчик перший то -> th, всі інші -> td
         const cell = document.createElement(cellTag);
 
         if (i === 0 && j === 0) {
